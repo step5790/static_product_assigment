@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: Helvetica;
   background-color: black;
+  color: whitesmoke;
 }
 
 main {
@@ -32,9 +33,10 @@ main {
   line-height: 100%;
 }
 
-.categories {
+.categories,
+.product_list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 3rem;
   margin-left: 16%;
   margin-right: 16%;
@@ -42,8 +44,9 @@ main {
 }
 
 .item_category {
-  padding: 10%;
-  text-align: center;
+  display: flex;
+  padding: 6%;
+  justify-content: center;
 }
 
 .item_button {
@@ -63,5 +66,86 @@ main {
 }
 
 .item_category:hover {
+  background-color: rgb(202, 75, 17);
+}
+
+/* products */
+
+.navigation {
+  font-size: 3rem;
+  text-align: right;
+  margin-top: 5%;
+  margin-right: 15%;
+  color: rgb(204, 194, 194);
+  border-bottom: 1px solid orangered;
+  margin-left: 30%;
+  padding-bottom: 8px;
+  width: auto;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: rgb(204, 194, 194);
+}
+
+.product_item,
+.product_item_sale,
+.product_item_soldout {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.product_list img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  margin-bottom: 8%;
+}
+
+.product_list .item_name {
+  font-size: 2rem;
+}
+
+.sold_out {
+  position: absolute;
+  color: black;
+  background-color: rgb(252, 99, 99);
+  font-size: 2rem;
+  padding: 5px;
+}
+
+.calculated_price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 10%;
+  width: 100%;
+  color: red;
+}
+
+.item_price {
+  text-align: right;
+  border-top: 1px solid whitesmoke;
+  padding-top: 6px;
+  font-weight: bold;
+  padding-bottom: 10%;
+}
+
+.item_sub_cat {
+  color: rgb(204, 194, 194);
+}
+
+.product_list .button {
+  background-color: whitesmoke;
+  font-size: 1rem;
+  margin-top: auto;
+  border: 0px none;
+  padding: 5%;
+  margin-bottom: 30%;
+}
+
+.product_list .button:hover {
   background-color: rgb(202, 75, 17);
 }
