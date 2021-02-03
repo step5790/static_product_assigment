@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Prompt:wght@500&display=swap");
+
 body {
   margin: 0;
   font-family: Helvetica;
-  background-color: white;
+  background-color: black;
 }
 
 main {
@@ -14,27 +16,34 @@ main {
   height: auto;
   width: auto;
   margin: auto;
-  background-color: rgb(248, 238, 191);
   align-items: center;
+  background-image: url("/assets/maldives.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-bottom: 5%;
 }
 
 .banner h1 {
   font-size: 7rem;
-  font-family: helvetica;
+  font-family: "Gloria Hallelujah", cursive;
   margin-left: 5rem;
+  color: bisque;
+  line-height: 100%;
 }
 
 .categories {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 3rem;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 16%;
+  margin-right: 16%;
   margin-top: 10%;
 }
 
 .item_category {
-  margin: 10%;
+  padding: 10%;
+  text-align: center;
 }
 
 .item_button {
@@ -45,9 +54,14 @@ main {
 
 .item_category a {
   text-decoration: none;
+  color: whitesmoke;
+  font-family: helvetica;
+}
+
+.item_category a:hover {
   color: black;
 }
 
-button:hover {
-  color: red;
+.item_category:hover {
+  background-color: rgb(202, 75, 17);
 }
