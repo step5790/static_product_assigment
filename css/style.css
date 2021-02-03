@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Helvetica;
+  background-color: white;
+}
+
+main {
+  font-size: 1rem;
+  margin: 5rem;
+}
+
+.banner {
+  display: flex;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: rgb(248, 238, 191);
+  align-items: center;
+}
+
+.banner h1 {
+  font-size: 7rem;
+  font-family: helvetica;
+  margin-left: 5rem;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 3rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+}
+
+.item_category {
+  margin: 10%;
+}
+
+.item_button {
+  font-size: 2rem;
+  border: 0px none;
+  background-color: transparent;
+}
+
+.item_category a {
+  text-decoration: none;
+  color: black;
+}
+
+button:hover {
+  color: red;
+}
