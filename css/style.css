@@ -69,6 +69,13 @@ main {
   background-color: rgb(202, 75, 17);
 }
 
+.item_price {
+  font-size: 22px;
+}
+.item_discount_price {
+  text-decoration-line: line-through;
+}
+
 /* products */
 
 .navigation {
@@ -86,6 +93,15 @@ main {
 .navigation a {
   text-decoration: none;
   color: rgb(204, 194, 194);
+}
+
+.navigation a:hover {
+  color: rgb(202, 75, 17);
+}
+
+.product_list a {
+  text-decoration: none;
+  color: black;
 }
 
 .product_item,
@@ -139,6 +155,7 @@ main {
 
 .product_list .button {
   background-color: whitesmoke;
+  text-align: center;
   font-size: 1rem;
   margin-top: auto;
   border: 0px none;
@@ -148,4 +165,89 @@ main {
 
 .product_list .button:hover {
   background-color: rgb(202, 75, 17);
+}
+
+/* item list */
+
+.item_details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.item_image img {
+  width: 80%;
+  text-align: center;
+}
+
+.item_image {
+  text-align: center;
+}
+
+.navigation_list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 5%;
+  padding-top: 8%;
+  width: auto;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding-bottom: 7%;
+}
+
+.navigation_list a {
+  text-decoration: none;
+  color: rgb(204, 194, 194);
+  font-size: 1.3rem;
+}
+
+.navigation_list li {
+  padding-right: 1%;
+}
+
+.navigation_list a:hover {
+  color: rgb(202, 75, 17);
+}
+
+.item_name {
+  font-size: 2rem;
+}
+
+.item_details .button {
+  background-color: whitesmoke;
+  font-size: 1rem;
+  margin-top: auto;
+  border: 0px none;
+  padding: 3%;
+  margin-bottom: 30%;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.item_details .button:hover {
+  background-color: rgb(202, 75, 17);
+}
+
+.add_cart {
+  text-align: right;
+}
+.form {
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.item_details .discount_rate {
+  background-color: orange;
+  color: black;
+  padding: 1%;
+  font-weight: bold;
+}
+
+.form #size {
+  padding: 1%;
 }
