@@ -18,7 +18,7 @@ main {
   width: auto;
   margin: auto;
   align-items: center;
-  background-image: url("/assets/maldives.jpg");
+  background-image: url("http://meetstephen.dk/KEA/2nd_semester/dynamic_web/exercise/static_product_assigment/assets/maldives.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
