@@ -41,6 +41,10 @@ main {
   margin-left: 16%;
   margin-right: 16%;
   margin-top: 10%;
+  max-width: 1180px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 7%;
 }
 
 .item_category {
@@ -72,6 +76,7 @@ main {
 .item_price {
   font-size: 22px;
 }
+
 .item_discount_price {
   text-decoration-line: line-through;
 }
@@ -87,7 +92,9 @@ main {
   border-bottom: 1px solid orangered;
   margin-left: 30%;
   padding-bottom: 8px;
-  width: auto;
+  width: 50%;
+  margin: auto;
+  padding-top: 7%;
 }
 
 .navigation a {
@@ -175,27 +182,31 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   width: auto;
+  padding-bottom: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.item_description {
+  max-width: 700px;
 }
 
 .item_image img {
   width: 80%;
-  text-align: center;
-}
-
-.item_image {
-  text-align: center;
+  position: relative;
+  z-index: -1;
 }
 
 .navigation_list {
   display: flex;
   flex-direction: row;
+  font-size: 1rem;
+  padding-top: 6%;
   list-style: none;
-  padding-left: 5%;
-  padding-top: 8%;
-  width: auto;
-  margin-right: 10%;
-  margin-left: 10%;
+  color: rgb(204, 194, 194);
   padding-bottom: 7%;
+  width: 50%;
+  margin: auto;
 }
 
 .navigation_list a {
@@ -235,6 +246,7 @@ main {
 .add_cart {
   text-align: right;
 }
+
 .form {
   text-align: left;
   padding-top: 5%;

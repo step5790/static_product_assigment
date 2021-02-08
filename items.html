@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Items</title>
-  </head>
 
-  <div class="banner">
-    <h1>138 MALL</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Items</title>
+</head>
+
+<div class="banner">
+  <h1>138 MALL</h1>
+</div>
+
+<body>
+  <div class="navigation">
+    <a href="products.html">Product</a>
   </div>
 
-  <body>
-    <div class="navigation">
-      <a href="index.html">Categories</a>
-    </div>
+  <main></main>
 
+  <template>
     <ol class="navigation_list">
       <li><a href="index.html">Home > </a></li>
-      <li><a href="index.html">Apparels > </a></li>
-      <li><a href="products.html">Nike > </a></li>
+      <li><a class="first_sub" href="products.html"><span></span> ></a></li>
+      <li><a class="second_sub" href="products.html"><span></span> ></a></li>
       <li>
-        <a href="index.html">Sahara Team India Fanwear Round Neck Jersey > </a>
+        <a class="third_sub" href="items.html"><span></span> ></a>
       </li>
     </ol>
 
-    <main class="item_details">
+    <div class="item_details">
       <article class="item_image">
-        <img
-          src="http://meetstephen.dk/KEA/2nd_semester/dynamic_web/exercise/static_product_assigment/assets/1163.jpg"
-        />
+        <p class="sold_out">SOLD OUT</p>
+        <img></img>
       </article>
 
       <article class="item_description">
-        <p class="item_name">Sahara Team India Fanwear Round Neck Jersey</p>
-        <p class="item_id">id number 1163</p>
-        <p class="item_cat">Category: Apparel</p>
-        <p class="item_brand">Brand: Nike | T-shirt | Men</p>
-        <p class="description">
-          Description: Blue round neck Sahara Team India jersey, has short
-          sleeves, print on the chest and back chest
-        </p>
-        <p class="item_material">Material: 100% polyester Machine wash</p>
+        <p class="item_name"></p>
+        <p class="item_id">SKU: <span></span></p>
+        <p class="item_cat"></p>
+        <p class="item_brand"></p>
+        <p class="description"></p>
+        <p class="item_material"></p>
 
         <div class="form">
           <label for="size">Size:</label>
@@ -54,8 +54,8 @@
         </div>
 
         <div class="calculated_price">
-          <p class="discount_rate">SALE %28</p>
-          <p class="item_discount_price">DKK 1164</p>
+          <p class="discount_rate">SALE <span></span>%</p>
+          <p class="item_discount_price"></p>
         </div>
 
         <p class="item_price">DKK 1595</p>
@@ -64,6 +64,9 @@
           <a href="items.html" class="button">Add to cart</a>
         </div>
       </article>
-    </main>
-  </body>
+    </div>
+  </template>
+  <script src="jss/js.js"></script>
+</body>
+
 </html>
