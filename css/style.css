@@ -33,7 +33,19 @@ main {
   line-height: 100%;
 }
 
-.categories,
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 3rem;
+  margin-left: 16%;
+  margin-right: 16%;
+  margin-top: 10%;
+  max-width: 1180px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+
 .product_list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -45,6 +57,12 @@ main {
   margin: auto;
   margin-top: 10%;
   margin-bottom: 7%;
+}
+
+.product_list_details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .item_category {

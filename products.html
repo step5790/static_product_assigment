@@ -1,63 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Products</title>
-  </head>
 
-  <div class="banner">
-    <h1>138 MALL</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Products</title>
+</head>
+
+<div class="banner">
+  <h1>138 MALL</h1>
+</div>
+
+<body>
+  <div class="navigation">
+    <a href="index.html">Categories</a>
   </div>
 
-  <body>
-    <div class="navigation">
-      <a href="index.html">Categories</a>
-    </div>
+  <main></main>
+    <template>
+      <article class="product_list">
+        <div class="product_list_details">
+          <img></img>
+          <p class="sold_out">SOLD OUT</p>
+          <p class="item_name"></p>
+          <p class="item_sub_cat"></p>
+          <div class="calculated_price">
+            <p class="discount_rate">SALE <span></span>%</p>
+            <p class="item_discount_price"></p>
+          </div>
+          <p class="item_price"></p>
 
-    <main class="product_list">
-      <article class="product_item">
-        <img
-          src="http://meetstephen.dk/KEA/2nd_semester/dynamic_web/exercise/static_product_assigment/assets/1163.jpg"
-        />
-        <p class="item_name">Roundneck Jersey</p>
-        <p class="item_sub_cat">Nike | T-shirt | Men</p>
-        <p class="item_price">DKK 1163</p>
-
-        <a href="items.html" class="button">View More</a>
-      </article>
-
-      <article class="product_item_sale">
-        <img
-          src="http://meetstephen.dk/KEA/2nd_semester/dynamic_web/exercise/static_product_assigment/assets/1163.jpg"
-        />
-        <p class="item_name">Collared Jersey</p>
-        <p class="item_sub_cat">Nike | T-shirt | Men</p>
-        <div class="calculated_price">
-          <p class="discount_rate">-%28</p>
-          <p class="item_discount_price">DKK 1164</p>
+          <a href="items.html?id" class="button">View More</a>
         </div>
-        <p class="item_price">DKK 1595</p>
-
-        <a href="items.html" class="button">View More</a>
       </article>
+    </template>
 
-      <article class="product_item_soldout">
-        <img
-          src="http://meetstephen.dk/KEA/2nd_semester/dynamic_web/exercise/static_product_assigment/assets/1163.jpg"
-        />
-        <p class="sold_out">SOLD OUT</p>
-        <p class="item_name">Authentic Jersey</p>
-        <p class="item_sub_cat">Nike | T-shirt | Men</p>
-        <div class="calculated_price">
-          <p class="discount_rate">-%45</p>
-          <p class="item_discount_price">DKK 2495</p>
-        </div>
-        <p class="item_price">DKK 1165</p>
+  <script src="jss/products.js"></script>
+</body>
 
-        <a href="items.html" class="button">View More</a>
-      </article>
-    </main>
-  </body>
 </html>
