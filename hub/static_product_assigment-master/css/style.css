@@ -206,19 +206,13 @@ main {
 }
 
 .item_description {
-  width: 36rem;
+  max-width: 700px;
 }
 
 .item_image img {
   width: 80%;
   position: relative;
   z-index: -1;
-}
-
-.item_image {
-  width: 45rem;
-  justify-content: center;
-  display: flex;
 }
 
 .navigation_list {

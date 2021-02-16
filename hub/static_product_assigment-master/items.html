@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Items</title>
+</head>
+
+<div class="banner">
+  <h1>138 MALL</h1>
+</div>
+
+<body>
+  <div class="navigation">
+    <a href="products.html">Product</a>
+  </div>
+
+  <main></main>
+
+  <template>
+    <ol class="navigation_list">
+      <li><a href="index.html">Home > </a></li>
+      <li><a class="first_sub" href="products.html"><span></span> ></a></li>
+      <li><a class="second_sub" href="products.html"><span></span> ></a></li>
+      <li>
+        <a class="third_sub" href="items.html"><span></span> ></a>
+      </li>
+    </ol>
+
+    <div class="item_details">
+      <article class="item_image">
+        <p class="sold_out">SOLD OUT</p>
+        <img></img>
+      </article>
+
+      <article class="item_description">
+        <p class="item_name"></p>
+        <p class="item_id">SKU: <span></span></p>
+        <p class="item_cat"></p>
+        <p class="item_brand"></p>
+        <p class="description"></p>
+        <p class="item_material"></p>
+
+        <div class="form">
+          <label for="size">Size:</label>
+          <select name="size" id="size">
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>XLarge</option>
+          </select>
+        </div>
+
+        <div class="calculated_price">
+          <p class="discount_rate">SALE <span></span>%</p>
+          <p class="item_discount_price"></p>
+        </div>
+
+        <p class="item_price"></p>
+
+        <div class="add_cart">
+          <a href="items.html" class="button">Add to cart</a>
+        </div>
+      </article>
+    </div>
+  </template>
+  <script src="jss/items.js"></script>
+</body>
+
+</html>
